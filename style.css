@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --clr-dark:#252525;
+    --clr-text:#f3f3f3;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    font-family: 'Righteous', sans-serif;
+}
+.stn_time{
+    position: relative;
+    height: 100vh;
+    background-color: var(--clr-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.boxTime{
+    
+    color: var(--clr-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    width: 300px;
+    height: 170px;
+
+
+
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.133);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10.9px);
+
+    margin:70px 80px ;
+
+    
+    z-index: 10;
+
+
+}
+
+.hh , .mm , .ss{
+    width: 85px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+}
+
+.stn_time::before{
+    content: "";
+    width: 130px;
+    height: 130px;
+    border-radius: 30% 50% 35% 70% / 30% 40% 40% 65%;;
+    position: absolute;
+    background: linear-gradient(62deg, rgba(0,18,255,1) 0%, rgba(52,255,0,1) 21%, rgba(255,0,224,1) 100%);
+    z-index: 0;
+
+    transform: translateX(140px) translateY(80px);
+}
+
+.stn_time::after{
+    content: "";
+    width: 130px;
+    height: 130px;
+    border-radius: 30% 50% 35% 70% / 30% 40% 40% 65%;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(255,213,0,1) 0%, rgba(255,0,0,1) 21%, rgba(3,0,255,1) 100%);
+    z-index: 0;
+
+    transform: translateX(-160px) translateY(-50px);
+
+}
+
