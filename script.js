@@ -1,10 +1,11 @@
 
 
 setInterval(()=>{
+    // select tag 
     let hh = document.querySelector(".hh")
     let mm = document.querySelector(".mm")
     let ss = document.querySelector(".ss")
-
+    // chang val
     let h = new Date().getHours()
     let m = new Date().getMinutes()
     let s = new Date().getSeconds()
