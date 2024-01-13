@@ -8,6 +8,11 @@
 :root{
     --clr-dark:#252525;
     --clr-text:#f3f3f3;
+    --blue:rgba(0,18,255,1);
+    --green:rgba(52,255,0,1);
+    --pink:rgba(255,0,224,1);
+    --yellow:rgba(255,213,0,1);
+    --opasity:rgba(0, 0, 0, 0.1);
 }
 
 body{
@@ -39,9 +44,9 @@ body{
 
 
     /* From https://css.glass */
-    background: rgba(0, 0, 0, 0.133);
+    background: var(--opasity);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px var(--opasity);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(10.9px);
 
@@ -62,9 +67,9 @@ body{
     align-items: center;
     margin: 0 3px;
 
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--opasity);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px var(--opasity);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 
@@ -76,7 +81,7 @@ body{
     height: 130px;
     border-radius: 30% 50% 35% 70% / 30% 40% 40% 65%;;
     position: absolute;
-    background: linear-gradient(62deg, rgba(0,18,255,1) 0%, rgba(52,255,0,1) 21%, rgba(255,0,224,1) 100%);
+    background: linear-gradient(62deg, var(--blue) 0%, var(--green) 21%, var(--pink) 100%);
     z-index: 0;
 
     transform: translateX(140px) translateY(80px);
@@ -88,7 +93,7 @@ body{
     height: 130px;
     border-radius: 30% 50% 35% 70% / 30% 40% 40% 65%;
     position: absolute;
-    background: linear-gradient(0deg, rgba(255,213,0,1) 0%, rgba(255,0,0,1) 21%, rgba(3,0,255,1) 100%);
+    background: linear-gradient(0deg, var(--yellow) 0%, var(--green) 21%, var(--blue) 100%);
     z-index: 0;
 
     transform: translateX(-160px) translateY(-50px);
