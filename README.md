@@ -10,7 +10,7 @@ We use **SetInterval** to get the time from moment to moment
 
 Then we use **new Data()** to get the time
 
-```javascript
+```JavaScript
 setInterval(()=>{
     let h = new Date().getHours()
     let m = new Date().getMinutes()
