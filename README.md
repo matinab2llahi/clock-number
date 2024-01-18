@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/matin_abdollahi-javaScript-gold)
 ## Clock project
 
 In this project, we display the current time in **seconds, minutes,** and **hours.**
